@@ -37,7 +37,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             >
               <NavBar />
               <Separator />
-              {children}
+              <main className="flex flex-grow w-full justify-center items-center dark:bg-neutral-950">
+                {children}
+              </main>
             </div>
           </ThemeProvider>
         </body>
